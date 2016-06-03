@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1136181D01E6570028FA0C /* MHImagePickerMutilSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1136171D01E6570028FA0C /* MHImagePickerMutilSelector.m */; };
+		4D1AD9B61CF5545E004B2FFA /* CameraLayoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1AD9B51CF5545E004B2FFA /* CameraLayoutView.xib */; };
 		4D5F7FB51CE058E9004F7281 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F7FB41CE058E9004F7281 /* main.m */; };
 		4D5F7FB81CE058E9004F7281 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F7FB71CE058E9004F7281 /* AppDelegate.m */; };
 		4D5F7FBB1CE058E9004F7281 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F7FBA1CE058E9004F7281 /* ViewController.m */; };
 		4D5F7FBE1CE058E9004F7281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F7FBC1CE058E9004F7281 /* Main.storyboard */; };
 		4D5F7FC01CE058E9004F7281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F7FBF1CE058E9004F7281 /* Assets.xcassets */; };
 		4D5F7FC31CE058E9004F7281 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F7FC11CE058E9004F7281 /* LaunchScreen.storyboard */; };
+		4DAD615F1CF48D98006D5986 /* PanoramaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD615E1CF48D98006D5986 /* PanoramaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D1136161D01E6570028FA0C /* MHImagePickerMutilSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHImagePickerMutilSelector.h; sourceTree = "<group>"; };
+		4D1136171D01E6570028FA0C /* MHImagePickerMutilSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHImagePickerMutilSelector.m; sourceTree = "<group>"; };
+		4D1AD9B51CF5545E004B2FFA /* CameraLayoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraLayoutView.xib; sourceTree = "<group>"; };
 		4D5F7FB01CE058E8004F7281 /* MyImageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyImageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5F7FB41CE058E9004F7281 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D5F7FB61CE058E9004F7281 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		4D5F7FBF1CE058E9004F7281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D5F7FC21CE058E9004F7281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5F7FC41CE058E9004F7281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DAD615D1CF48D98006D5986 /* PanoramaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramaViewController.h; sourceTree = "<group>"; };
+		4DAD615E1CF48D98006D5986 /* PanoramaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,11 @@
 				4D5F7FC11CE058E9004F7281 /* LaunchScreen.storyboard */,
 				4D5F7FC41CE058E9004F7281 /* Info.plist */,
 				4D5F7FB31CE058E9004F7281 /* Supporting Files */,
+				4DAD615D1CF48D98006D5986 /* PanoramaViewController.h */,
+				4D1136161D01E6570028FA0C /* MHImagePickerMutilSelector.h */,
+				4D1136171D01E6570028FA0C /* MHImagePickerMutilSelector.m */,
+				4DAD615E1CF48D98006D5986 /* PanoramaViewController.m */,
+				4D1AD9B51CF5545E004B2FFA /* CameraLayoutView.xib */,
 			);
 			path = MyImageApp;
 			sourceTree = "<group>";
@@ -140,6 +153,7 @@
 				4D5F7FC31CE058E9004F7281 /* LaunchScreen.storyboard in Resources */,
 				4D5F7FC01CE058E9004F7281 /* Assets.xcassets in Resources */,
 				4D5F7FBE1CE058E9004F7281 /* Main.storyboard in Resources */,
+				4D1AD9B61CF5545E004B2FFA /* CameraLayoutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D5F7FBB1CE058E9004F7281 /* ViewController.m in Sources */,
+				4DAD615F1CF48D98006D5986 /* PanoramaViewController.m in Sources */,
 				4D5F7FB81CE058E9004F7281 /* AppDelegate.m in Sources */,
 				4D5F7FB51CE058E9004F7281 /* main.m in Sources */,
+				4D1136181D01E6570028FA0C /* MHImagePickerMutilSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +317,7 @@
 				4D5F7FC91CE058E9004F7281 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
