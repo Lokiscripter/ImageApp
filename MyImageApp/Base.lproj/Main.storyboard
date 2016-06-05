@@ -81,6 +81,7 @@
                                 <state key="normal" title="相册"/>
                                 <connections>
                                     <action selector="photoLibrary:" destination="Xzq-Fn-sdx" eventType="touchUpInside" id="2qF-dt-57H"/>
+                                    <segue destination="FIc-VS-IEe" kind="show" id="iEz-Ux-1Sj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgf-6s-T0h">
@@ -109,11 +110,7 @@
                                 <segue destination="zKZ-6O-Pww" kind="unwind" unwindAction="homePage:" id="Os7-oL-9cQ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yyv-hY-kYA">
-                            <connections>
-                                <segue destination="FIc-VS-IEe" kind="show" id="nWC-IJ-k8W"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yyv-hY-kYA"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWD-6L-BOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,7 +121,7 @@
         <!--编辑图片-->
         <scene sceneID="cnV-fN-dtg">
             <objects>
-                <viewController id="FIc-VS-IEe" sceneMemberID="viewController">
+                <viewController id="FIc-VS-IEe" customClass="PanoramaPicViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OpT-82-tV1"/>
                         <viewControllerLayoutGuide type="bottom" id="yev-ht-omA"/>

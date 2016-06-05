@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PanoramaPicViewController.h"
 #import "MHImagePickerMutilSelector.h"
+
+@protocol PanoramaViewDelegete <NSObject>
+
+@optional-(NSArray *)getCapturedImages;
+
+@end
 
 @interface PanoramaViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate,MHImagePickerMutilSelectorDelegate>
 @property (nonatomic) NSMutableArray *capturedImage;

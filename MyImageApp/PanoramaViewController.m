@@ -11,6 +11,8 @@
 @interface PanoramaViewController ()
 @property (nonatomic) MHImagePickerMutilSelector *imagePickerMutilSelector;
 @property (nonatomic) UIImagePickerController *imagePickerController;
+@property (nonatomic) PanoramaPicViewController * picViewController;
+@property (nonatomic) bool mergeSucess;
 @end
 
 @implementation PanoramaViewController
@@ -20,9 +22,13 @@
 {
     self.capturedImage =[[NSMutableArray alloc] initWithArray:imageArray copyItems:YES];
     
+    _picViewController.selImages = [[NSMutableArray alloc]initWithArray:self.capturedImage];
+    _mergeSucess = true;
 }
 
 //
+
+
 - (IBAction)photoLibrary:(id)sender {
     [self showImagePickerForSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
 }
@@ -69,8 +75,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.capturedImage = [[NSMutableArray alloc]init];
-    
+    _mergeSucess = false;
+    _picViewController = [[PanoramaPicViewController alloc]init];
     // Do any additional setup after loading the view.
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    if(_mergeSucess == true)
+    {
+        UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:_picViewController];
+        nav.navigationItem.title = @"编辑图片"
+        [self.navigationController pushViewController:_picViewController animated:true];
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,6 +107,7 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissViewControllerAnimated:YES completion:NULL];
+    
 }
 /*
 #pragma mark - Navigation
